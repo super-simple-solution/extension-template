@@ -11,8 +11,12 @@ module.exports = {
   rules: {
     'prefer-rest-params': 'off',
     'no-empty-function': 'off',
+    '@typescript-eslint/no-empty-function': ['error'],
     'no-console': 0,
     'no-debugger': 0,
+    '@typescript-eslint/no-explicit-any': ['off'],
+    quotes: [1, 'single'], //引号类型 `` "" ''
+    semi: [2, 'never'], // 语句强制分号结尾
     'prettier/prettier': [
       'error',
       {
@@ -27,12 +31,20 @@ module.exports = {
         plugins: [require('prettier-plugin-tailwindcss')],
       },
     ],
+    '@typescript-eslint/no-empty-interface': [
+      'error',
+      {
+        allowSingleExtends: false,
+      },
+    ],
   },
+  parser: 'eslint-parser',
   parserOptions: {
     ecmaVersion: 2020,
     sourceType: 'module',
     ecmaFeatures: {
       experimentalObjectRestSpread: true,
+      jsx: true,
     },
   },
 }
