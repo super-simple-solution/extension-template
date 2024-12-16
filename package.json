@@ -7,8 +7,8 @@
     "build": "vite build"
   },
   "devDependencies": {
-    "@crxjs/vite-plugin": "2.0.0-beta.18",
-    "@types/chrome": "^0.0.269",
+    "@crxjs/vite-plugin": "2.0.0-beta.28",
+    "@types/chrome": "0.0.287",
     "@typescript-eslint/eslint-plugin": "^8.0.0",
     "@typescript-eslint/parser": "^8.0.0",
     "eslint": "^9.8.0",
@@ -18,7 +18,7 @@
     "prettier-plugin-tailwindcss": "^0.6.5",
     "sass": "^1.77.8",
     "tailwindcss": "^3.4.7",
-    "vite": "^5.3.5",
+    "vite": "^6.0.3",
     "vite-plugin-eslint": "^1.8.1",
     "vite-plugin-style-import": "^2.0.0",
     "vite-plugin-zip-pack": "^1.2.3",
