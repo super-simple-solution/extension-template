@@ -1,4 +1,2 @@
-function init() {
-  console.log('init')
-}
+function init() {}
 init()
